@@ -1,38 +1,299 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Arial, sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
+  background-color: #f4efef;
+  border-radius: 20px;
+  padding: 5px;
   align-items: center;
+  width: 500px; 
+  margin-top: 230px;
+  margin-left: 370px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.container .child {
+  flex: 1;
+  display: flex;
+  border: none;
+  padding: 18px 10px;
+  border-radius: 20px;
+  outline: none;
+  font-size: 15px;
+}
+.container .child1 {
+  flex: 1;
+  border: none;
+  padding: 18px 10px;
+  border-radius: 20px;
+  outline: none;
+  font-size: 15px;
+}
+
+.fa-search {
+  font-size: 20px;
+  color: #4b5050;
+  margin-right: 10px; 
+}
+.fa-map-marker-alt {
+  display: flex;
+  font-size: 20px;
+  color: #534c4c;
+  margin-left: 20px;
+  margin-right: 10px; 
+}
+.login button {
+  display: flex;
   color: white;
+  background-color: aqua;
+  border: 1px solid aqua;
+  width: 100px;
+  height: 40px;
+  margin-left: 1100px;
+  margin-top: -260px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  outline: none;
+  cursor: pointer;
+  transition: all 1s linear;
+}
+.signup button{
+  display: flex;
+  background-color: white;
+  color:aqua;
+  border : 1px solid cyan ;
+  width: 100px;
+  height: 40px;
+  margin-left: 1210px;
+  margin-top: -40px;
+  padding: 5px 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+.select button{
+  display: flex;
+  background-color: rgb(11, 11, 11);
+  color:white;
+  border : 1px solid cyan ;
+  width: 200px;
+  height: 40px;
+  margin-left: 1320px;
+  margin-top: -40px;
+  padding: 5px 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+.login button:hover{
+  background-color: blue;
+  /* display: none; */
+}
+.signup button:hover{
+  background-color: blue;
+}
+.select button:hover{
+  background-color: pink;
+}
+#shark {
+background-color: white;
+border: 1px solid brown;
+width: 59%;
+height: 55px;
+display: flex;
+margin: 0 auto;
+margin-top: -35px;
+margin-left: 90px;
+outline: none;
+border: none;
+}
+#shark .chill {
+background-color: white ;
+height: 36px;
+width: 220px;
+border: 1px solid black;
+margin-top: 5px;
+display: inline-block;
+padding: 0 15px; 
+margin-right: 5px;
+text-align: center; 
+outline: none;
+border: none;
+cursor: pointer;
+}
+#shark .chill:hover {
+  transform: scale(1.1); 
+  background-color: rgb(243, 234, 221);
+  border-radius: 15px;
+  align-items: center;
+ padding: 5px 5px;
+}
+.spm{
+display:flex;
+margin-top: -120px;
+margin-right:309px ;
+justify-content: center;
+font-size: 50px;
+}
+.recomment{
+display: flex;
+width: 250px;
+height: 45px;
+background-color: rgb(227, 237, 243);
+color: #1596a1 ;
+margin-top:140px;
+margin-left: 30px;
+justify-content: center;
+align-items: center;
+font-size: 10px;
+}
+.logo{
+  display: flex;
+  width: 100px;
+  height: 80px;
+  margin-top: -350px;
+}
+.logo1{
+  display: flex;
+  width: 370px;
+  height: 420px;
+  margin-top: 15px;
+  margin-left: 1100px;
 }
 
-.App-link {
-  color: #61dafb;
+.component {
+background-color: white;
+border: 1px solid brown;
+width: 100%;
+height: 90px;
+display: flex;
+margin-top: -150px;
+margin-left: 0px;
+border:  1px solid rgb(228, 222, 222);
+/* padding: auto; */
+/* outline: none;
+border: none; */
+}
+.component .feeling {
+background-color: white ;
+height: 65px;
+width: 200px;
+border: 1px solid black;
+margin-top: 10px;
+margin-left: 20px;
+display: inline-block;
+padding: 0 15px; 
+margin-right: 5px;
+align-items: center;
+text-align: center; 
+border: 1px solid rgb(228, 222, 222);
+cursor: pointer;
+padding: 20px 10px;
+border-radius: 10px;
+}
+.component .feeling:hover {
+  transform: scale(1.1); 
+}
+.support{
+  margin-left: 1410px;
+  margin-top: 180px;
+  /* display:flex; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.building {
+background-color: white;
+border: 1px solid brown;
+width: 9%;
+height: 55px;
+display: flex;
+margin-top: -200px;
+margin-left: 1100px;
+flex-direction: column;
+outline: none;
+border: none;
+font-size: 13px;
+}
+.building .bul {
+background-color: white ;
+height: 36px;
+width: 220px;
+border: 1px solid black;
+margin-top: 10px;
+display: inline-block;
+padding: 0 15px; 
+margin-right: 5px;
+outline: none;
+border: none;
+cursor: pointer;
+}
+.CV {
+background-color: white;
+border: 1px solid brown;
+width: 9%;
+height: 55px;
+display: flex;
+margin-top: -50px;
+margin-left: 850px;
+flex-direction: column;
+outline: none;
+border: none;
+font-size: 13px;
+}
+.CV .apply {
+background-color: white ;
+height: 36px;
+width: 220px;
+border: 1px solid black;
+margin-top: 10px;
+display: inline-block;
+padding: 0 15px; 
+margin-right: 5px;
+outline: none;
+border: none;
+cursor: pointer;
+}
+.my-project {
+background-color: white;
+border: 1px solid brown;
+width: 9%;
+height: 55px;
+display: flex;
+margin-top: -50px;
+margin-left: 600px;
+flex-direction: column;
+outline: none;
+border: none;
+font-size: 13px;
+}
+.my-project .carr {
+background-color: white ;
+height: 36px;
+width: 220px;
+border: 1px solid black;
+margin-top: 10px;
+display: inline-block;
+padding: 0 15px; 
+margin-right: 5px;
+outline: none;
+border: none;
+cursor: pointer;
+}
+.last{
+    margin-left: 10px;
+    margin-top: -80px;
+    cursor: pointer;
 }
